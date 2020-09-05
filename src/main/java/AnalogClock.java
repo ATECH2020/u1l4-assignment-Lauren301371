@@ -16,7 +16,7 @@ class AnalogClock {
          */
          remainingMin = hourDegrees % 30;
          minDegrees = remainingMin * 12;
-         System.out.println(minDegrees);
+         System.out.print(minDegrees);
 
         // closing the scanner object
         scanner.close();

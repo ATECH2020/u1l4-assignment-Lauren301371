@@ -34,7 +34,7 @@ class StudentDesks {
          desks3 += remainder3;
 
          total = desks1 + desks2 + desks3;
-         System.out.println(total);
+         System.out.print(total);
         // closing the scanner object
         scanner.close();
     }
