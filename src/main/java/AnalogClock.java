@@ -8,17 +8,21 @@ class AnalogClock {
 
         //Reads ints from user
         int hourDegrees = scanner.nextInt();
+
+        //Creates variables for remainder and degrees of minute hand
         int remainingMin;
         int minDegrees;
 
-        /*
-         *  your code goes here
-         */
+        //Gets remaining degrees (how much the minute hand turned since the start of the hour) by dividing by the number of degrees of each hour in a clock
          remainingMin = hourDegrees % 30;
+
+        //Multiplies remaining degrees by 12 to scale it up to fit the clock
          minDegrees = remainingMin * 12;
+
+        //Prints out degrees of the minute hand
          System.out.print(minDegrees);
 
-        // closing the scanner object
+        //Closing the scanner object
         scanner.close();
     }
 }

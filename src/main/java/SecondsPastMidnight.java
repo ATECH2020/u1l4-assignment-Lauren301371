@@ -8,16 +8,21 @@ class SecondsPastMidnight {
 
         //Reads int from user
         int seconds = scanner.nextInt();
+
+        //Creates variables for hours and minutes
         int hours;
         int minutes;
 
-        //Your code goes here
+        //Divides seconds by # of seconds in an hour
         hours = seconds / 3600;
+
+        //Divides seconds by # of seconds in a min.
         minutes = seconds / 60;
 
+        //Prints out hours and minutes past midnight
         System.out.print(hours + " " + minutes);
 
-        // closing the scanner object
+        //Closing the scanner object
         scanner.close();
     }
 }
